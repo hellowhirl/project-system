@@ -1,0 +1,267 @@
+body {
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(228 235 238) !important;
+}
+
+.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: rgb(0 0 0 / 60%);
+}
+
+.container {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+h1 {
+  padding: 40px 0;
+}
+
+.login-page {
+  display: flex;
+  background-color: rgb(231 235 237);
+}
+
+.login-form-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 620px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.login-form-container {
+  padding: 60px;
+  margin-bottom: 160px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.login-form-container select,
+.login-form-container input {
+  width: 200px;
+  height: 36px;
+}
+
+.login-form-container label {
+  padding: 36px 0 6px;
+  text-align: left;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: #1975f1;
+}
+
+.login-form-container button {
+  padding: 10px 40px;
+  margin-top: 40px;
+}
+
+.form-inner-container {
+  padding: 0 32px;
+}
+
+.error-message {
+  position: relative;
+}
+
+.error-message div {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  color: rgb(231, 71, 71);
+  font-weight: bold;
+}
+
+.admin,
+.reviews,
+.employee-view {
+  padding-bottom: 100px;
+}
+
+:root {
+  --borderWidth: 7px;
+  --height: 24px;
+  --width: 12px;
+  --borderColor: #78b13f;
+}
+
+.status {
+  position: relative;
+}
+
+.completed {
+  display: inline-block;
+  position: absolute;
+  left: 27px;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+}
+
+.incomplete {
+  display: inline-block;
+  margin: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 23px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  border-color: #747f8d;
+  position: absolute;
+  left: 19px;
+}
+
+.incomplete:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 6px;
+  margin-top: -3px;
+  margin-left: -3px;
+  border-right: 2px solid #747f8d;
+  border-left: 2px solid #747f8d;
+}
+
+.employees {
+  position: relative;
+  min-height: 70vh;
+  padding-bottom: 130px;
+}
+
+.modal-popup {
+  z-index: 3;
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 30px;
+  background-color: white;
+}
+
+.inner-modal-popup {
+  padding: 10px;
+}
+
+.inner-modal-popup input {
+  width: 200px;
+}
+
+.inner-modal-popup label {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.inner-modal-popup button {
+  margin-top: 20px;
+}
+
+.inputs-container span {
+  display: block;
+  color: rgb(206, 94, 94);
+}
+
+.close-box {
+  position: relative;
+}
+
+.close-circle {
+  background-color: red;
+  position: absolute;
+  border-radius: 7px;
+  top: -20px;
+  right: -20px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.close {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  line-height: 25px;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.employeeList {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.top-icon {
+  width: 120px;
+}
+
+.icons-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.greeting {
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+
+.greeting span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.section-image {
+  width: 200px;
+}
+
+.pointer-hand {
+  width: 36px;
+  position: absolute;
+  right: 10px;
+  bottom: -23px;
+  transition: transform 450ms;
+}
+
+.pointer-hand:hover {
+  transform: translateY(-10px);
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 880px !important;
+  }
+}
